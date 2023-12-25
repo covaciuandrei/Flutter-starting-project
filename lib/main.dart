@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stockify/app_router.gr.dart';
+import 'package:stockify/core/app_router.gr.dart';
 
 void main() {
   runApp(MyApp());
