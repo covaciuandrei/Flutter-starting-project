@@ -11,8 +11,9 @@
 import 'package:get_it/get_it.dart' as _i1;
 import 'package:injectable/injectable.dart' as _i2;
 
-import '../cubit/introductive/introductive_cubit.dart' as _i3;
-import '../cubit/login/login_cubit.dart' as _i4;
+import '../cubit/introductive/introductive_cubit.dart' as _i4;
+import '../cubit/login/login_cubit.dart' as _i5;
+import 'app_router.dart' as _i3;
 
 // initializes the registration of main-scope dependencies inside of GetIt
 _i1.GetIt $initGetIt(
@@ -25,7 +26,8 @@ _i1.GetIt $initGetIt(
     environment,
     environmentFilter,
   );
-  gh.factory<_i3.IntroductiveCubit>(() => _i3.IntroductiveCubit());
-  gh.factory<_i4.LoginCubit>(() => _i4.LoginCubit());
+  gh.singleton<_i3.$AppRouter>(_i3.$AppRouter());
+  gh.factory<_i4.IntroductiveCubit>(() => _i4.IntroductiveCubit());
+  gh.factory<_i5.LoginCubit>(() => _i5.LoginCubit());
   return getIt;
 }

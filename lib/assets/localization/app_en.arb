@@ -1,0 +1,15 @@
+{
+  "appTitle": "Stockify",
+  "@appTitle": {
+    "description": "Application name."
+  },
+  "settingsTabName": "Settings",
+  "@settingsTabName": {
+    "description": "Settings tab name"
+  },
+  "homeTabName": "Home",
+  "@homeTabName": {
+    "description": "Home tab name"
+  } 
+}
+
