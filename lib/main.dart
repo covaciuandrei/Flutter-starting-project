@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:stockify/core/app_router.gr.dart';
 import 'package:stockify/core/injection.dart';
+import 'package:stockify/cubit/introductive/introductive_cubit.dart';
+import 'package:stockify/cubit/login/login_cubit.dart';
 
 void main() {
   configureDependencies();
@@ -13,9 +16,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      routerDelegate: _appRouter.delegate(),
-      routeInformationParser: _appRouter.defaultRouteParser(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider<IntroductiveCubit>(
+            create: (context) => getIt<IntroductiveCubit>()),
+        BlocProvider<LoginCubit>(create: (context) => getIt<LoginCubit>()),
+      ],
+      child: MaterialApp.router(
+        routerDelegate: _appRouter.delegate(),
+        routeInformationParser: _appRouter.defaultRouteParser(),
+      ),
     );
   }
 }
