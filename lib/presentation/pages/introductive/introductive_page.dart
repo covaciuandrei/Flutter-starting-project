@@ -3,15 +3,24 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:stockify/core/app_router.gr.dart';
+import 'package:stockify/core/injection.dart';
 import 'package:stockify/cubit/base_state.dart';
 import 'package:stockify/cubit/introductive/introductive_cubit.dart';
 
-
-class IntroductivePage extends StatefulWidget {
+@RoutePage()
+class IntroductivePage extends StatefulWidget implements AutoRouteWrapper {
   const IntroductivePage({super.key});
 
   @override
   State<IntroductivePage> createState() => _IntroductivePageState();
+
+  @override
+  Widget wrappedRoute(BuildContext context) {
+    return BlocProvider<IntroductiveCubit>(
+      create: (context) => getIt<IntroductiveCubit>(),
+      child: this,
+    );
+  }
 }
 
 class _IntroductivePageState extends State<IntroductivePage> {
@@ -27,7 +36,7 @@ class _IntroductivePageState extends State<IntroductivePage> {
       listener: (context, state) {},
       builder: (context, state) {
         return Scaffold(
-          appBar: AppBar(title:  Text(AppLocalizations.of(context).appTitle)),
+          appBar: AppBar(title: Text(AppLocalizations.of(context).appTitle)),
           body: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
