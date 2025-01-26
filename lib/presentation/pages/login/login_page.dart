@@ -25,18 +25,16 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<LoginCubit, BaseState>(
-      listener: (context, state) {
-        // if(state is ){
-        //   AutoRouter.of(context).pop();
-        // }
-      },
+      listener: (context, state) {},
       builder: (context, state) {
-        return Center(
-          child: TextButton(
-            child: Text('Go back'),
-            onPressed: () {
-              AutoRouter.of(context).maybePop();
-            },
+        return Scaffold(
+          body: Center(
+            child: TextButton(
+              child: const Text('Go back'),
+              onPressed: () {
+                AutoRouter.of(context).maybePop();
+              },
+            ),
           ),
         );
       },

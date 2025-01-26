@@ -10,7 +10,7 @@ import 'package:stockify/core/injection.dart';
 void main() async {
   configureDependencies();
   await getIt.allReady();
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {

@@ -42,14 +42,13 @@ class _IntroductivePageState extends State<IntroductivePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                const Text('salut'),
+                const Text('Ttile'),
                 TextButton(
                   style: const ButtonStyle(
-                    backgroundColor: MaterialStatePropertyAll(Colors.amber),
+                    backgroundColor: WidgetStatePropertyAll(Colors.amber),
                   ),
                   child: const Text('Go to login'),
                   onPressed: () {
-                    // AutoRouter.of(context).pop();
                     AutoRouter.of(context).push(const LoginRoute());
                   },
                 ),
