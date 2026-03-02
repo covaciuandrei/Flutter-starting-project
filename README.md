@@ -1,4 +1,4 @@
-# Stockify
+# Flutter Starting Template
 
 A Flutter template project.
 

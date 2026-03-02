@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace "com.example.stockify"
+    namespace "com.example.flutter_starting_template"
     compileSdkVersion flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
 
@@ -19,7 +19,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.example.stockify"
+        applicationId "com.example.flutter_starting_template"
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion flutter.targetSdkVersion
         versionCode 1

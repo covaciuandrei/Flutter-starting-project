@@ -3,9 +3,9 @@ import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart';
-import 'package:stockify/assets/localization/app_localizations.dart';
-import 'package:stockify/core/app_router.dart';
-import 'package:stockify/core/injection.dart';
+import 'package:flutter_starting_template/assets/localization/app_localizations.dart';
+import 'package:flutter_starting_template/core/app_router.dart';
+import 'package:flutter_starting_template/core/injection.dart';
 
 void main() async {
   configureDependencies();
@@ -30,7 +30,7 @@ class _MyAppState extends State<MyApp> {
       routerConfig: _appRouter.config(
         navigatorObservers: () => [AutoRouteObserver()],
       ),
-      title: 'Stockify',
+      title: 'Flutter Starting Template',
       localizationsDelegates: const [
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,

@@ -1,6 +1,6 @@
 {
-    "name": "stockify",
-    "short_name": "stockify",
+    "name": "flutter-starting-template",
+    "short_name": "flutter-starting-template",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

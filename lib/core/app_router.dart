@@ -1,6 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:injectable/injectable.dart';
-import 'package:stockify/core/app_router.gr.dart';
+import 'package:flutter_starting_template/core/app_router.gr.dart';
 
 @lazySingleton
 @AutoRouterConfig(replaceInRouteName: 'Page,Route')

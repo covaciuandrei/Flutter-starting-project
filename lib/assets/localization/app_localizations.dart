@@ -101,7 +101,7 @@ abstract class AppLocalizations {
   /// Application name.
   ///
   /// In en, this message translates to:
-  /// **'Stockify'**
+  /// **'Flutter Starting Template'**
   String get appTitle;
 
   /// Settings tab name

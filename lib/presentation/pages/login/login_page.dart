@@ -1,9 +1,9 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:stockify/core/injection.dart';
-import 'package:stockify/cubit/base_state.dart';
-import 'package:stockify/cubit/login/login_cubit.dart';
+import 'package:flutter_starting_template/core/injection.dart';
+import 'package:flutter_starting_template/cubit/base_state.dart';
+import 'package:flutter_starting_template/cubit/login/login_cubit.dart';
 
 @RoutePage()
 class LoginPage extends StatefulWidget implements AutoRouteWrapper {

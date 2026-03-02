@@ -9,7 +9,7 @@ class AppLocalizationsRo extends AppLocalizations {
   AppLocalizationsRo([String locale = 'ro']) : super(locale);
 
   @override
-  String get appTitle => 'Stockify';
+  String get appTitle => 'Flutter Starting Template';
 
   @override
   String get settingsTabName => 'Setări';
