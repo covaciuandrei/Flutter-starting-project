@@ -1,3 +1,4 @@
+// dart format width=80
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
 // **************************************************************************
@@ -17,10 +18,7 @@ import 'package:stockify/presentation/pages/login/login_page.dart' as _i2;
 /// [_i1.IntroductivePage]
 class IntroductiveRoute extends _i3.PageRouteInfo<void> {
   const IntroductiveRoute({List<_i3.PageRouteInfo>? children})
-      : super(
-          IntroductiveRoute.name,
-          initialChildren: children,
-        );
+    : super(IntroductiveRoute.name, initialChildren: children);
 
   static const String name = 'IntroductiveRoute';
 
@@ -36,10 +34,7 @@ class IntroductiveRoute extends _i3.PageRouteInfo<void> {
 /// [_i2.LoginPage]
 class LoginRoute extends _i3.PageRouteInfo<void> {
   const LoginRoute({List<_i3.PageRouteInfo>? children})
-      : super(
-          LoginRoute.name,
-          initialChildren: children,
-        );
+    : super(LoginRoute.name, initialChildren: children);
 
   static const String name = 'LoginRoute';
 
